@@ -1,74 +1,67 @@
-# Trilha HTML - Dio.me
-## Módulo 02 - HTML I - Conceitos Básicos
+## Observações sobre a implementação
 
-Este desafio tem como objetivo, criar um site "quase" completo, com tudo o que vimos neste módulo. Os temas que deverão ser abordados são:
-- Formulários
-- Estruturação e formatação de texto
-- Mídias
-- Tabelas
+Este projeto seguiu as orientações do desafio, utilizando o arquivo `template.html` e a estrutura sugerida como base. Optamos por um menu de navegação superior (ao invés do menu lateral do exemplo) para proporcionar uma experiência mais moderna e responsiva, mantendo o padrão de header com imagem, content e footer em todas as páginas.
 
-Além de outros recursos falados nas aulas!
+**Foram utilizados recursos básicos de CSS e JavaScript apenas para compor a estética, responsividade e experiência do usuário, sem objetivo de segurança ou backend.**
 
-## Instruções
-1. Você deve criar um site de uma clínica médica (você escolhe a especialidade)
-2. Este site deve conter o seguinte menu de navegação:
-    - Página Principal
-    - Sobre a clínica
-    - Horário de Atendimento
-    - Contato
-3. Deve, obrigatoriamente, utilizar todas os assuntos abordados nas aulas.
+Todos os requisitos de conteúdo, navegação e estrutura foram atendidos, incluindo formulários, tabelas, mídias e navegação entre páginas.
 
-Abaixo como cada página deve ser criada e estruturada.
+# Clínica Prime Saúde e Bem-Estar
 
-### Estrutura das páginas
+Este projeto é o resultado do desafio do Módulo 2 de HTML da DIO.me, com adaptações para uma experiência mais moderna e responsiva.
 
-Todas as páginas terão que seguir um padrão pré-definido. Como não aprendemos sobre CSS ainda, utilize o arquivo `template.html` para utilizar como base. Ele segue uma estrutura semelhante a image abaixo.
+## Estrutura e Tecnologias
 
-![Estrutura](https://i.stack.imgur.com/9jI6f.gif)
+- Todas as páginas seguem um padrão: menu de navegação superior, header com imagem, conteúdo centralizado e footer com informações de contato.
+- O menu é horizontal (no topo), diferente do template lateral sugerido, para melhor usabilidade e visual.
+- **Foram utilizados recursos básicos de CSS e JavaScript apenas para compor a estética, responsividade e experiência do usuário, sem objetivo de segurança ou backend.**
+- O site é totalmente estático, sem backend ou banco de dados.
 
-\* _No template tem algumas cores mas é apenas para melhor visualização. Fique a vontade para alterar da melhor forma._
+## Funcionalidades e Conteúdo
 
-No **Menu**, ficará localizado o menu de navegação (ah vá!), no **Header** de cada página ficará uma imagem, no **Footer** informações de contato, e o **Content** é o conteúdo de cada página.
+### Menu de Navegação
+Presente em todas as páginas, permite acesso rápido à Página Principal, Sobre, Horários e Contato.
+
 ### Página Principal
-1. Deve ter uma imagem no **Header**.
-2. Em **Content** uma breve descrição sobre a clínica.
-3. **Menu** e **Footer** padrões em todas as páginas.
+- Imagem de header acolhedora.
+- Breve apresentação da clínica, missão e diferenciais.
+- Lista dos principais procedimentos oferecidos.
 
-### Sobre a clínica
-1. Deve ter uma imagem diferente no **Header**.
-2. Em **Content** um texto falando sobre a clínica.
-3. **Menu** e **Footer** padrões em todas as páginas.
+### Sobre a Clínica
+- Imagem de header exclusiva.
+- Texto institucional sobre a história, missão e valores da clínica.
+- Lista detalhada dos procedimentos e especialidades.
 
 ### Horário de Atendimento
-1. Deve ter uma imagem diferente no **Header**.
-2. Em **Content** um pequeno texto falando sobre os serviços, e uma tabela de preços, onde cada linha é um serviço, com o preço de cada um de acordo com os dias da semana.
+- Imagem de header diferente das demais, com tema natureza/ambiente médico.
+- Texto introdutório sobre os serviços.
+- Tabela com horários e preços a partir de R$ 250 para cada procedimento:
 
-|Serviços |Segunda a Sexta | Sábados | Feriados |
-|---|---|---|---|
-|Clínica geral | 08h - 19h  | 08h - 14h | 08h - 14h  |
-|Psicologia | 08h - 19h  | 08h - 14h | 08h - 14h  |
-|Pediatria | 08h - 19h  | 08h - 18h | - |
-|Oftalmologia | 08h - 19h  | 08h - 18h | - |
-|||||
-
-3. **Menu** e **Footer** padrões em todas as páginas.
-
+| Procedimento                 | Segunda a Sexta | Sábados     | Preço (a partir de) |
+|------------------------------|-----------------|-------------|---------------------|
+| Fisioterapia motora          | 08h - 18h       | 08h - 12h   | R$ 250              |
+| Terapia ocupacional          | 08h - 18h       | 08h - 12h   | R$ 250              |
+| Reabilitação cardiopulmonar  | 08h - 18h       | 08h - 12h   | R$ 300              |
+| Dor crônica e lombalgia      | 08h - 18h       | 08h - 12h   | R$ 250              |
+| Pós-operatório ortopédico    | 08h - 18h       | 08h - 12h   | R$ 280              |
+| Neurologia (AVC, TCE)        | 08h - 18h       | 08h - 12h   | R$ 350              |
+| Pilates clínico              | 08h - 18h       | 08h - 12h   | R$ 250              |
+| Fonoaudiologia               | 08h - 18h       | 08h - 12h   | R$ 250              |
 
 ### Contato
-1. Deve ter uma imagem diferente no **Header**.
-2. Em **Content** deve ter:
-    - Os telefones de contato (celular e whatsapp)
-    - Endereço completo da clínica
-    - Um Iframe com o Google Maps apontando o endereço da clínica
-    - Um formulário de contato com:
-        - Nome (type="text")
-        - E-mail (type="email")
-        - Assunto (type="text")
-        - Mensagem (textarea)
-        - Botões de envias e limpar formulário
+- Imagem de header exclusiva.
+- Telefones de contato (fixo e celular/whatsapp).
+- Endereço completo da clínica.
+- Iframe do Google Maps com localização.
+- Formulário de contato com validação HTML (nome, telefone, e-mail, assunto, mensagem até 500 caracteres).
+- Envio do formulário exibe mensagem de sucesso na tela (via JavaScript), sem recarregar a página.
 
-3. **Menu** e **Footer** padrões em todas as páginas.
+## Observações
 
-Desafio está lançado! Com tudo que aprendemos no Módulo II é perfeitamente possível criar este site! 
+- O projeto foi adaptado para um visual mais agradável e moderno, mantendo todos os requisitos de conteúdo, navegação e estrutura do desafio.
+- O template sugerido foi usado como inspiração, mas a navegação foi aprimorada para melhor experiência do usuário.
+- CSS e JavaScript foram usados apenas para fins estéticos e de usabilidade, **sem objetivo de segurança**.
 
-Bora pra cima!
+---
+
+Desenvolvido para o desafio DIO.me - Trilha HTML Módulo II.

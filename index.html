@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clínica Prime Saúde e Bem-Estar</title>
+  <style>
+    .intro h1 {
+      font-size: 2rem;
+      color: var(--brand-dark);
+      text-shadow: 1px 2px 8px #b6e0e6;
+      margin: .2rem 0 0.6rem;
+      display: block;
+      background: none;
+      padding: 0;
+      border-radius: 0;
+    }
+    .card.intro {
+      align-items: flex-start;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+    * { box-sizing: border-box }
+    body { margin: 0; font: 20px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg) }
+    a { color: var(--brand-dark); text-decoration: none }
+    img { max-width: 100%; display: block }
+    .container { max-width: 1100px; margin: auto; padding: 20px 20px 20px 20px; }
+    header { padding: 20px 0 }
+    header .brand { font-weight: 700; letter-spacing: .4px }
+    nav { display: flex; gap: 20px; font-size: 1.2rem; color: var(--muted) }
+    .topbar { display: flex; justify-content: space-between; align-items: center }
+    /* HERO */
+    .hero {
+      background: linear-gradient(90deg, rgba(42,122,134,.15), rgba(127,198,207,.15)), url('') center/cover no-repeat;
+      padding: 28px 0 8px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      align-items: stretch;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+    .intro p { color: var(--muted); margin: .4rem 0 1rem }
+    .sig { font-family: "Comic Sans MS", "Brush Script MT", cursive; font-size: 1.5rem }
+    .list h3 { margin: .2rem 0 1rem }
+    .list ul { list-style: none; padding: 0; margin: 0; columns: 2; gap: 22px }
+    .list li { margin: .45rem 0; position: relative; padding-left: 18px }
+    .list li:before { content: "\2022"; position: absolute; left: 0; color: var(--brand-dark) }
+    .badges { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 16px }
+    .badge { font-size: .8rem; color: var(--muted); border: 1px solid #e6eef3; border-radius: 999px; padding: 6px 10px; background: #fff }
+    /* CONTACT STRIP */
+    .strip {
+      background: var(--brand);
+      color: #08343a;
+      margin: 16px auto;
+      border-radius: 999px;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 20px;
+      font-size: .95rem;
+      max-width: 1100px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .strip span { display: flex; align-items: center; gap: 8px }
+    /* POPULAR */
+    .section h2 { font-size: 1.15rem; margin: 18px 0 10px }
+    .section p.lead { color: var(--muted); margin: 0 0 14px }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px }
+    .cols .card ul { columns: 2; list-style: none; margin: 0; padding: 0 }
+    .cols .card li { margin: .4rem 0; color: var(--muted) }
+    .cta { display: inline-block; background: var(--brand-dark); color: #fff; padding: 10px 14px; border-radius: 10px; margin-top: 8px }
+    /* ICON GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin: 18px 0 30px;
+    }
+    .tile {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      text-align: center;
+    }
+    .icon { font-size: 32px; line-height: 1; margin-bottom: 8px }
+    footer { color: var(--muted); font-size: .9rem; padding: 24px 0 40px }
+    /* RESPONSIVO */
+    @media (max-width:900px) {
+      .hero-grid { grid-template-columns: 1fr }
+      .list ul { columns: 1 }
+      .grid { grid-template-columns: repeat(2, 1fr) }
+      .cols { grid-template-columns: 1fr }
+    }
+  </style>
+</head>
+<body>
+  <div class="container topbar">
+    <div class="brand">Clínica Prime Saúde e Bem-Estar</div>
+    <nav>
+      <a href="index.html">Página Principal</a>
+      <a href="sobre.html">Sobre a Clínica</a>
+      <a href="horarios.html">Horário de Atendimento</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="card intro">
+  <img class="header-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Ambiente acolhedor da clínica" style="width: 100%; max-height: 180px; object-fit: cover; border-radius: 0 0 12px 12px; margin-bottom: 18px;" />
+        <h1>Ajudamos pessoas a recuperarem sua qualidade de vida e terem um novo começo</h1>
+        <p>
+          Atendimento humanizado, ambiente acolhedor e planos terapêuticos
+          personalizados para sua reabilitação.
+        </p>
+        <p class="sig">Responsável: Dra. Ana Saldanha das Neves CRM 123456</p>
+      </div>
+      <div class="card list">
+        <h3>Nossos procedimentos</h3>
+        <ul>
+          <li>Fisioterapia motora</li>
+          <li>Terapia ocupacional</li>
+          <li>Reabilitação cardiopulmonar</li>
+          <li>Dor crônica e lombalgia</li>
+          <li>Pós-operatório ortopédico</li>
+          <li>Neurologia (AVC, TCE)</li>
+          <li>Pilates clínico</li>
+          <li>Fonoaudiologia</li>
+        </ul>
+        <div class="badges">
+          <span class="badge">Associação Brasileira de Reabilitação</span>
+          <span class="badge">Atendimento Humanizado</span>
+          <span class="badge">Acessibilidade</span>
+        </div>
+      </div>
+    </div>
+    <div class="container strip" id="contato">
+      <span>📞 (71) 3333-0000/ (71) 9999-0000</span>
+      <span>✉️ contato@clinicaprime.com</span>
+      <span>📍 Av. Saúde, 200 – Sala 230 – BA</span>
+    </div>
+  </section>
+  <main class="container">
+    <section class="section" id="procedimentos">
+      <h2>Procedimentos populares</h2>
+      <p class="lead">Conheça algumas das terapias mais procuradas pelos nossos pacientes.</p>
+      <div class="cols">
+        <div class="card">
+          <ul>
+            <li>Tratamento de dores articulares</li>
+            <li>Reabilitação pós-AVC</li>
+            <li>Fisioterapia respiratória</li>
+            <li>Reabilitação esportiva</li>
+            <li>Prevenção de lesões</li>
+          </ul>
+          <a class="cta" href="#">Conheça a equipe</a>
+        </div>
+        <div class="grid">
+          <div class="tile">
+            <div class="icon">💧</div>
+            <div>Bem-estar</div>
+          </div>
+          <div class="tile">
+            <div class="icon">🛌</div>
+            <div>Reabilitação Domiciliar</div>
+          </div>
+          <div class="tile">
+            <div class="icon">💪</div>
+            <div>Fortalecimento Muscular</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container">
+    © 2025 Clínica Prime Saúde e Bem-Estar — Todos os direitos reservados.
+  </footer>
+</body>
+</html>
+
